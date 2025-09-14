@@ -81,12 +81,6 @@ const mobileMenuBtn = document.getElementById('mobile-menu-btn');
                 const sectionHeight = section.offsetHeight;
                 const sectionTop = section.offsetTop - 200;
                 const sectionId = section.getAttribute('id');
-                const navLink = document.querySelector(`nav a[href="#${sectionId}"]`);
-
-                if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight && navLink) {
-                    document.querySelectorAll('nav a').forEach(link => link.classList.remove('text-white'));
-                    navLink.classList.add('text-white');
-                    navLink.classList.remove('text-accent-gray');
-                }
             });
+
         });
