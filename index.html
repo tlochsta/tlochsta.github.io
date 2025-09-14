@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about tlochsta</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="extras.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dark-bg': '#1a1a1a',
+                        'darker-bg': '#141414',
+                        'accent-gray': '#666666',
+                        'light-gray': '#999999',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="tlochsta" />
+    <link rel="manifest" href="site.webmanifest" />
+</head>
+<body class="bg-darker-bg text-white overflow-x-hidden">
+    <nav class="fixed top-0 w-full z-50 bg-darker-bg bg-opacity-90 backdrop-blur-sm">
+        <div class="max-w-6xl mx-auto px-6 py-6">
+            <div class="flex justify-between items-center">
+                <div class="text-white">
+                    <svg width="29" height="27" viewBox="0 0 29 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25.1406 5.7334L20.9795 10.0156L18.6152 9.49707V18.6279L28.2471 16.3193V22.2324L12.1484 26.3701V13.4746L9.66406 26.3701L2.50195 24.8447L6.95703 6.77441L0 5.05957L1.24707 0L25.1406 5.7334Z" fill="white"/>
+                    </svg>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="nav-link text-accent-gray hover:text-white smooth-transition text-sm">About</a>
+                    <a href="#projects" class="nav-link text-accent-gray hover:text-white smooth-transition text-sm">Projects</a>
+                    <a href="#skills" class="nav-link text-accent-gray hover:text-white smooth-transition text-sm">Skills</a>
+                    <a href="#contact" class="nav-link text-accent-gray hover:text-white smooth-transition text-sm">Contact</a>
+                </div>
+                <button class="md:hidden text-white focus:outline-none" id="mobile-menu-btn">
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu md:hidden" id="mobile-menu">
+        <div class="mobile-menu-content">
+            <a href="#about" class="mobile-nav-link text-white text-2xl hover:text-accent-gray smooth-transition">About</a>
+            <a href="#projects" class="mobile-nav-link text-white text-2xl hover:text-accent-gray smooth-transition">Projects</a>
+            <a href="#skills" class="mobile-nav-link text-white text-2xl hover:text-accent-gray smooth-transition">Skills</a>
+            <a href="#contact" class="mobile-nav-link text-white text-2xl hover:text-accent-gray smooth-transition">Contact</a>
+        </div>
+    </div>
+
+    <section class="min-h-screen flex items-center justify-start px-6">
+        <div class="max-w-6xl mx-auto w-full">
+            <div class="max-w-3xl">
+                <p class="text-accent-gray text-base md:text-lg mb-4 fade-in">Hey, I'm</p>
+                <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-light text-white mb-6 md:mb-8 fade-in stagger-1">tlochsta</h1>
+                <h2 class="text-lg sm:text-xl md:text-2xl lg:text-4xl font-light text-accent-gray mb-8 md:mb-12 fade-in stagger-2 leading-relaxed">
+                    I'm a <span class="text-white">graphic designer</span> &<br>
+                    <span class="text-white">software engineer</span>
+                </h2>
+                <a href="#about" class="minimal-button border border-accent-gray px-6 md:px-8 py-3 text-accent-gray hover:text-white hover:border-white smooth-transition fade-in stagger-3 inline-block text-sm md:text-base">
+                    Read about me →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 md:py-32 px-6 bg-dark-bg">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
+                <div class="fade-in">
+                    <h2 class="text-3xl md:text-5xl font-light text-white mb-6 md:mb-8">About</h2>
+                    <p class="text-light-gray text-base md:text-lg leading-relaxed mb-4 md:mb-6">
+                        I'm a creative technologist who bridges the gap between design and engineering. With a passion for clean, functional aesthetics and robust technical solutions.
+                    </p>
+                    <p class="text-light-gray text-base md:text-lg leading-relaxed mb-6 md:mb-8">
+                        I specialize in creating digital experiences that are not only visually compelling but also technically sound and user-centered.
+                    </p>
+                    <div class="space-y-2">
+                        <p class="text-accent-gray text-sm">Currently available for new projects</p>
+                        <p class="text-accent-gray text-sm">Based in Georgia, United States</p>
+                    </div>
+                </div>
+                <div class="fade-in stagger-1">
+                    <div class="space-y-4 text-light-gray text-sm md:text-base">
+                        <div class="flex justify-between items-center">
+                            <span>Software Engineering</span>
+                            <span class="text-accent-gray text-xs md:text-sm">5+ years</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span>Graphic Design</span>
+                            <span class="text-accent-gray text-xs md:text-sm">3+ years</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span>UI/UX Design</span>
+                            <span class="text-accent-gray text-xs md:text-sm">3+ years</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span>Hardware Projects</span>
+                            <span class="text-accent-gray text-xs md:text-sm">2+ years</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-16 md:py-32 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-5xl font-light text-white mb-8 md:mb-16 fade-in">Featured Projects</h2>
+            <div class="space-y-8 md:space-y-12">
+                <div class="project-card p-4 md:p-8 fade-in stagger-1">
+                    <div class="grid md:grid-cols-3 gap-4 md:gap-8 items-center">
+                        <div>
+                            <h3 class="text-xl md:text-2xl font-light text-white mb-2">Asteroid Containers</h3>
+                            <p class="text-light-gray text-sm md:text-base mb-4"><em class="text-sm">Originally built for <a class="font-bold hover:underline" href="https://watrbx.wtf/">watrbx</a>.</em><br>Asteroid Containers is a modular, secure, and extensible file container server with a modern web-based admin panel.</p>
+                            <div class="flex flex-wrap gap-2 md:gap-4 text-accent-gray text-xs md:text-sm">
+                                <span>JavaScript w/ Node.js</span>
+                                <span>EJS w/ Express.js</span>
+                                <span>CSS</span>
+                            </div>
+                            <a class="font-bold hover:underline mt-2 text-xs md:text-sm text-accent-gray" href="https://github.com/Asteroid-Cloud/containers">View on GitHub</a>
+                        </div>
+                        <div class="md:col-span-2">
+                            <div class="bg-accent-gray bg-opacity-20 h-48 md:h-64 rounded flex items-center justify-center">
+                                <span class="text-accent-gray text-sm">No preview available for this project.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card p-4 md:p-8 fade-in stagger-2">
+                    <div class="grid md:grid-cols-3 gap-4 md:gap-8 items-center">
+                        <div>
+                            <h3 class="text-xl md:text-2xl font-light text-white mb-2">WindowEngine</h3>
+                            <p class="text-light-gray text-sm md:text-base mb-4">WindowEngine (WE) is a JavaScript-based library for creating and managing draggable, resizable, and customizable windows on your web page.</p>
+                            <div class="flex flex-wrap gap-2 md:gap-4 text-accent-gray text-xs md:text-sm">
+                                <span>JavaScript</span>
+                            </div>
+                            <a class="font-bold hover:underline mt-2 text-xs md:text-sm text-accent-gray" href="https://github.com/tlochsta/window-system">View on GitHub</a>
+                        </div>
+                        <div class="md:col-span-2">
+                            <div class="bg-[url('windowengine.png')] bg-cover h-48 md:h-64 rounded flex items-center justify-center">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card p-4 md:p-8 fade-in stagger-3">
+                    <div class="grid md:grid-cols-3 gap-4 md:gap-8 items-center">
+                        <div>
+                            <h3 class="text-xl md:text-2xl font-light text-white mb-2">AsteroidDNS</h3>
+                            <p class="text-light-gray text-sm md:text-base mb-4">AsteroidDNS is a Discord bot for managing domains and DNS records, with support for Cloudflare integration and MySQL storage. It is built using discord.js v14, and is designed to be modular and extensible for additional commands or features.</p>
+                            <div class="flex flex-wrap gap-2 md:gap-4 text-accent-gray text-xs md:text-sm">
+                                <span>JavaScript</span>
+                                <span>Discord.js</span>
+                            </div>
+                            <a class="font-bold hover:underline mt-2 text-xs md:text-sm text-accent-gray" href="https://github.com/Asteroid-Cloud/discord-dns">View on GitHub</a>
+                        </div>
+                        <div class="md:col-span-2">
+                            <div class="bg-[url('asteroiddns.png')] bg-cover h-48 md:h-64 rounded flex items-center justify-center">
+                                <span class="text-accent-gray text-sm"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card p-4 md:p-8 fade-in stagger-3">
+                    <div class="grid md:grid-cols-3 gap-4 md:gap-8 items-center">
+                        <div>
+                            <h3 class="text-xl md:text-2xl font-light text-white mb-2">Gloss</h3>
+                            <p class="text-light-gray text-sm md:text-base mb-4">A simplistic and easy to use web proxy to bypass restrictions and access blocked content. (Not intended for school use)</p>
+                            <div class="flex flex-wrap gap-2 md:gap-4 text-accent-gray text-xs md:text-sm">
+                                <span>HTML</span>
+                                <span>JavaScript</span>
+                                <span>Node.js</span>
+                                <span>TailwindCSS</span>
+                            </div>
+                            <a class="font-bold hover:underline mt-2 text-xs md:text-sm text-accent-gray" href="https://github.com/usegloss/gloss">View on GitHub</a>
+                        </div>
+                        <div class="md:col-span-2">
+                            <div class="bg-[url('gloss.png')] bg-cover h-48 md:h-64 rounded flex items-center justify-center">
+                                <span class="text-accent-gray text-sm"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-16 md:py-32 px-6 bg-dark-bg">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-8 md:gap-16">
+                <div class="fade-in">
+                    <h2 class="text-3xl md:text-5xl font-light text-white mb-8 md:mb-16">Capabilities</h2>
+                    <div class="space-y-6 md:space-y-8">
+                        <div>
+                            <h3 class="text-lg md:text-xl font-light text-white mb-4">Development</h3>
+                            <div class="space-y-0">
+                                <div class="skill-item">
+                                    <span class="text-light-gray text-sm md:text-base">Frontend Development</span>
+                                    <div class="skill-bar" style="width: 85%;"></div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="text-light-gray text-sm md:text-base">Backend Development</span>
+                                    <div class="skill-bar" style="width: 75%;"></div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="text-light-gray text-sm md:text-base">Hardware Development</span>
+                                    <div class="skill-bar" style="width: 45%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-lg md:text-xl font-light text-white mb-4">Design</h3>
+                            <div class="space-y-0">
+                                <div class="skill-item">
+                                    <span class="text-light-gray text-sm md:text-base">Logo & Branding Design</span>
+                                    <div class="skill-bar" style="width: 70%;"></div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="text-light-gray text-sm md:text-base">Flyers & Social Media Content</span>
+                                    <div class="skill-bar" style="width: 60%;"></div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="text-light-gray text-sm md:text-base">Web Design & UX</span>
+                                    <div class="skill-bar" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fade-in stagger-1">
+                    <div class="space-y-6 md:space-y-8 pt-0 md:pt-20">
+                        <div>
+                            <h4 class="text-white mb-4 text-base md:text-lg">Tools & Technologies</h4>
+                            <div class="grid grid-cols-2 gap-3 md:gap-4 text-light-gray text-xs md:text-sm">
+                                <div>HTML</div>
+                                <div>CSS</div>
+                                <div>TailwindCSS</div>
+                                <div>JavaScript</div>
+                                <div>Node.js</div>
+                                <div>Express.js</div>
+                                <div>EJS</div>
+                                <div>Python</div>
+                                <div>Figma</div>
+                                <div>Canva</div>
+                                <div>DNS (Networking)</div>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-white mb-4 text-base md:text-lg">Currently Learning</h4>
+                            <div class="text-light-gray text-xs md:text-sm space-y-2">
+                                <div>React.js & Next.js</div>
+                                <div>Electron.js</div>
+                                <div>Hardware Design</div>
+                                <div>Lua</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="py-16 md:py-32 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-8 md:gap-16">
+                <div class="fade-in">
+                    <h2 class="text-3xl md:text-5xl font-light text-white mb-6 md:mb-8">Let's Work Together</h2>
+                    <p class="text-light-gray text-base md:text-lg leading-relaxed mb-6 md:mb-8">
+                        I'm always interested in new opportunities and collaborations. Whether you need design work, development, or anything in between. Feel free to reach out!
+                    </p>
+                    <button class="minimal-button border border-accent-gray px-6 md:px-8 py-3 text-accent-gray hover:text-white hover:border-white smooth-transition text-sm md:text-base">
+                        Get in touch →
+                    </button>
+                </div>
+                <div class="fade-in stagger-1 space-y-6 md:space-y-8">
+                    <div>
+                        <h4 class="text-white mb-2 text-base md:text-lg">Email</h4>
+                        <p class="text-light-gray text-sm md:text-base">tlochsta@gmail.com</p>
+                    </div>
+                    <div>
+                        <h4 class="text-white mb-2 text-base md:text-lg">Social</h4>
+                        <div class="space-y-2 text-light-gray text-sm md:text-base">
+                            <div><a href="https://youtube.com/@tlochsta" class="hover:text-white smooth-transition">YouTube</a></div>
+                            <div><a href="https://github.com/tlochsta" class="hover:text-white smooth-transition">GitHub</a></div>
+                            <div><a href="https://www.instagram.com/tlochsta/" class="hover:text-white smooth-transition">Instagram</a></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-white mb-2 text-base md:text-lg">Status</h4>
+                        <p class="text-light-gray text-sm md:text-base">Available for projects</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="cool.js"></script>
+</body>
+</html>

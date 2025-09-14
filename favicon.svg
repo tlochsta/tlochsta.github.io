@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000"><style>
+    #light-icon {
+      display: inline;
+    }
+    #dark-icon {
+      display: none;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      #light-icon {
+        display: none;
+      }
+      #dark-icon {
+        display: inline;
+      }
+    }
+  </style><g id="light-icon"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000"><g clip-path="url(#SvgjsClipPath1402)"><rect width="1000" height="1000" fill="#2a2a2a"></rect><g transform="matrix(24.137931034482758,0,0,24.137931034482758,150,174.1379310344828)"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="29" height="27"><svg width="29" height="27" viewBox="0 0 29 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25.1406 5.7334L20.9795 10.0156L18.6152 9.49707V18.6279L28.2471 16.3193V22.2324L12.1484 26.3701V13.4746L9.66406 26.3701L2.50195 24.8447L6.95703 6.77441L0 5.05957L1.24707 0L25.1406 5.7334Z" fill="white"></path>
+                    </svg></svg></g></g><defs><clipPath id="SvgjsClipPath1402"><rect width="1000" height="1000" x="0" y="0" rx="250" ry="250"></rect></clipPath></defs></svg></g><g id="dark-icon"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000"><g><g transform="matrix(34.48275862068966,0,0,34.48275862068966,-5.684341886080802e-14,34.482758620689594)"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="29" height="27"><svg width="29" height="27" viewBox="0 0 29 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25.1406 5.7334L20.9795 10.0156L18.6152 9.49707V18.6279L28.2471 16.3193V22.2324L12.1484 26.3701V13.4746L9.66406 26.3701L2.50195 24.8447L6.95703 6.77441L0 5.05957L1.24707 0L25.1406 5.7334Z" fill="white"></path>
+                    </svg></svg></g></g></svg></g></svg>
